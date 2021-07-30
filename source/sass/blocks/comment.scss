@@ -1,0 +1,294 @@
+.comments {
+  display: table-footer-group;
+
+  &__wrapper {
+    padding: 0 16px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 80px;
+    }
+  }
+
+  &__header {
+    position: relative;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 184px;
+      height: 4px;
+      background: #00C368;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__main-block {
+    position: relative;
+    border: 1px solid;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    border-radius: 32px;
+    border-image-source: linear-gradient(318.43deg, rgba(0, 195, 104, 0.4) 0%, rgba(0, 195, 104, 0) 99.05%);
+    margin-top: 91px;
+    padding-bottom: 15px;
+  }
+
+  &__main-text {
+    position: relative;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 79px 16px 20px 16px;
+    text-align: center;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 26px;
+      background: url("../img/quotes.svg") 0 0 no-repeat;
+      top: 23px;
+      left: 14px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 26px;
+      background: url("../img/quotes.svg") 0 0 no-repeat;
+      top: 23px;
+      right: 15px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__main-photo {
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__main-sign {
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+// второй блок
+  &__second-block {
+    margin-top: 35px;
+  }
+
+  &__second-photo {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    height: 160px;
+  }
+
+  &__second-text-block {
+    line-height: 24px;
+    margin-right: 8px;
+  }
+
+  &__second-sign,
+  &__third-sign {
+    font-weight: 700;
+    margin-top: 16px;
+  }
+
+  // третий блок
+  &__third-block {
+    line-height: 24px;
+    margin-top: 26px;
+  }
+
+  &__third-photo {
+    position: relative;
+    float: right;
+    height: 160px;
+    margin-left: 9px;
+  }
+
+  &__third-text-block {
+    margin: 0 0 0 4px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .comments {
+    display: table-cell;
+    background-color: #F5F5F5;
+    min-width: 50vw;
+    min-height: 100%;
+    padding: 0;
+    
+    &__wrapper {
+      display: block;
+      padding: 0;
+    }
+        
+    &__header {
+      display: block;
+      position: relative;
+      font-size: 40px;
+      line-height: 46.88px;
+      text-align: center;
+      margin: 120px 90px 0 90px;
+      padding: 0 20px;
+    
+      &::before {
+        top: -20px;
+      }
+    }
+
+    &__main-block {
+      border: none;
+      box-shadow: none;
+      margin: 50px 0 0 0;
+      padding: 0;
+    }
+      
+    &__main-text-block {
+      padding: 0 20px;
+    }
+      
+    &__main-pic {
+      display: block;
+    }
+      
+    &__main-photo {
+      position: relative;
+      float: left;
+      top: -10px;
+      left: 85px;
+      margin-left: 39px;
+      height: 250px;
+    }
+      
+    &__main-text {
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+            
+      &::before {
+        background: url("../img/quotes-green.svg") 0 0 no-repeat;
+        top: -10px;
+        left: 200px;
+      }
+        
+      &::after {
+        background: url("../img/quotes-green.svg") 0 0 no-repeat;
+        top: 210px;
+        right: 0;
+      }
+    }
+      
+    &__main-sign {
+      text-shadow: none;
+      text-align: left;
+      margin-top: 12px;
+    }
+      
+    &__blocks {
+      position: relative;
+      display: block;
+      margin: 41px 0 0 0;
+      padding: 0 50px;
+    }
+//второй блок
+    &__second-block {
+      clear: left;
+      float: left;
+      width: 367px;
+      margin: 0;
+    }
+      
+    &__second-photo {
+      position: relative;
+      float: right;
+      width: 125px;
+      height: 125px;
+      top: -13px;
+      left: -5px;
+    }
+          
+    &__second-pic {
+      width: 125px;
+      height: 125px;
+    }
+      
+    &__second-text {
+      margin: 0;
+    }
+      
+// третий блок
+    &__third-block {
+      position: relative;
+      float: right;
+      width: 350px;
+      margin-top: 0;
+    }
+      
+    &__third-photo {
+      position: relative;
+      float: left;
+      margin-left: -15px;
+      top: -13px;
+      left: -10px;
+    }
+      
+    &__third-pic {
+      width: 125px;
+      height: 125px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    &__main-block {
+      margin: 50px 0 0 15px;
+    }
+
+    &__main-text-block {
+      padding: 0 73px 0 117px;
+    }
+
+    &__main-photo {
+      height: auto;
+      left: 53px;
+    }
+
+    &__main-text {
+      &::before {
+        top: 0;
+        left: 228px;
+      }
+        
+      &::after {
+        top: 186px;
+        right: -10px;
+      }
+    }
+
+    &__blocks {
+      margin: 141px 0 0 0;
+      padding: 0 30px 0 130px;
+    }
+
+    &__third-block {
+      margin-right: 78px;
+    }
+  }
+}

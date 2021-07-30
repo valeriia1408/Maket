@@ -1,0 +1,39 @@
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 1300px) and (max-width: $desktop-width) {
+  .main-nav {
+    display: block;
+
+    &__button-text {
+      display: block;
+      font-family: $main-font;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      margin: 0;
+      padding: 4px 34px;
+
+      &:hover {
+        color: $main-color;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &__button {
+      position: relative;
+      float: right;
+      background: #00C368;
+      box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
+      border-radius: 8px;
+      margin: 65px 85px 0 0;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+}

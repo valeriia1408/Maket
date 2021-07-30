@@ -1,0 +1,196 @@
+.slider {
+    display: block;
+    position: relative;
+    padding: 0 16px;
+    margin-top: 45px;
+    cursor: pointer;
+  
+    &__icon {
+      display: block;
+      margin: 0 auto;
+      fill: transparent;
+    }
+  
+    .block__text {
+      width: 176px;
+      height: 57px;
+      margin: 0 auto;
+      text-align: center;
+     
+    }
+  
+    &__text {
+      margin-top: 11px;
+    }
+  }
+  
+  .slider .slick-arrow {
+    position: absolute;
+    font-size: 0;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+
+  .slider .slick-arrow.slick-prev {
+    position: absolute;
+    background: url("../img/arrow-prev.svg") 0 0 no-repeat;
+    width: 19px;
+    height: 20px;
+    top: 218px;
+    left: 27%;
+  }
+  
+  .slider .slick-arrow.slick-next {
+    position: absolute;
+    background: url("../img/arrow-next.svg") 0 0 no-repeat;
+    width: 19px;
+    height: 20px;
+    top: 218px;
+    left: 70%;
+  }
+  
+  
+  .slider .slick-dots {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 55px;
+    left: -5px;
+  }
+  
+  .slider .slick-dots li {
+    list-style: none;
+    margin-left: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e7ebf0;
+  }
+  
+  .slider .slick-dots li:nth-child(6) {
+    display: none;
+  }
+  
+  .slider .slick-dots li.slick-active {
+    background-color: #a6abbd;
+  }
+  
+  .slider .slick-dots button {
+    font-size: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 1300px) {
+    .slider {
+      &__box {
+        width: 179px;
+        height: 157.02px;
+      }
+      
+      &__box:nth-child(1) {
+        position: absolute;
+        top: 21px;
+        left: 42%;
+      }
+      
+      &__box:nth-child(2) {
+        position: absolute;
+        top: 20px;
+        left: 60%;
+      }
+      
+      &__box:nth-child(3) {
+        position: absolute;
+        top: 287px;
+        left: 75%;
+        @media (min-width: 1500px) {
+          position: absolute;
+          top: 287px;
+          left: 74%;
+        }
+        @media (min-width: 1600px) {
+          position: absolute;
+          top: 287px;
+          left: 72%;
+        }
+        @media (min-width: 1700px) {
+          position: absolute;
+          top: 287px;
+          left: 70%;
+        }
+        @media (min-width: 1800px) {
+          position: absolute;
+          top: 287px;
+          left: 69%;
+        }
+      }
+      
+      &__box:nth-child(4) {
+        position: absolute;
+        top: 508px;
+        left: 60%;
+      }
+      
+      &__box:nth-child(5) {
+        position: absolute;
+        top: 510px;
+        left: 42%;
+      }
+      
+      &__box:nth-child(6) {
+        position: absolute;
+        top: 300px;
+        left: 28.7%;
+      }
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    .slider {
+      &__box:nth-child(1) {
+        position: absolute;
+        top: 21px;
+        left: 38.5%;
+      }
+      &__box:nth-child(2) {
+        position: absolute;
+        top: 20px;
+        left: 53.1%;
+      }
+  
+      &__box:nth-child(3) {
+        position: absolute;
+        top: 287px;
+        left: 64.1%;
+      }
+  
+      &__box:nth-child(4) {
+        position: absolute;
+        top: 508px;
+        left: 53.2%;
+      }
+  
+      &__box:nth-child(5) {
+        position: absolute;
+        top: 510px;
+        left: 38.5%;
+      }
+  
+      &__box:nth-child(6) {
+        position: absolute;
+        top: 300px;
+        left: 28.7%;
+      }
+    }
+  }
